@@ -1,9 +1,9 @@
-import { HorizontalCard } from "@/components/maincard";
+import { ContactCard } from "@/components/contactcard";
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center bg-gray-800 text-black">
-      <HorizontalCard />
+      <ContactCard />
     </main>
   );
 }
