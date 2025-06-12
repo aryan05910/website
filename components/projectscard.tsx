@@ -27,6 +27,9 @@ export function ProjectsCard() {
             <Typography variant="h2" className="text-5xl font-bold mb-4 ">
               Projects
             </Typography>
+            <Typography className="text-lg mb-6">
+              Explore my projects that showcase my skills in web development, data science, and more.
+            </Typography>
           </CardBody>
         </Card>
       </div>
