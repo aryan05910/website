@@ -25,12 +25,22 @@ export function HorizontalCard() {
           
           {/* Left content area */}
           <CardBody className="p-25 sm:w-2/3 flex flex-col justify-center">
-            <Typography variant="h2" className="text-5xl font-bold mb-4 ">
+            <Typography variant="h2" className="text-5xl font-bold ">
+              Hello, I'm
+            </Typography>
+            <Typography variant="h2" className="text-5xl font-bold mb-8 ">
               Aryan Saraswat
             </Typography>
             <Typography className="text-gray-300 text-lg leading-relaxed">
               I am a Full Stack Developer with a passion for creating dynamic and responsive web applications. I love coding and enjoy working on challenging projects that push my limits.
             </Typography>
+            <a
+              href="/resume.pdf"
+              download
+              className="mt-4 inline-block px-16 py-3 bg-white text-black font-semibold rounded-lg shadow-md hover:bg-gray-200 transition duration-300"
+            >
+              Download Resume
+            </a>
           </CardBody>
 
           {/* Right image area */}
