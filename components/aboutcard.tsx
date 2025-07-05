@@ -27,6 +27,10 @@ export function AboutCard() {
             <Typography variant="h2" className="text-5xl font-bold mb-4 ">
               About
             </Typography>
+            <Typography className="text-gray-300 text-lg leading-relaxed">
+              I’m a Computer Science student at the University of Central Florida with 3+ years of hands-on experience in coding, app development, system programming, and automation. I enjoy in-depth software engineering, coding, working with data structures and algorithms, and solving complex problems through clean, efficient code. 
+              Whether it’s building apps from the ground up or streamlining / optimizing existing systems, I’m all about turning ideas into real, working solutions. 
+            </Typography>
           </CardBody>
         </Card>
       </div>
