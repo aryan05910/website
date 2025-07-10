@@ -24,17 +24,19 @@ export function HorizontalCard() {
         <Card className="w-full max-w-[800px] rounded-3xl shadow-2xl bg-black text-white overflow-hidden flex flex-col sm:flex-row">
           
           {/* Left content area */}
-          <CardBody className="p-25 sm:w-2/3 flex flex-col justify-center">
-            <Typography variant="h2" className="text-5xl font-bold ">
+          <CardBody className="p-15 sm:w-2/3 flex flex-col justify-start">
+            <Typography variant="h2" className="text-5xl font-bold mb-4">
               Welcome.
             </Typography>
-            <Typography className="text-gray-300 text-lg leading-relaxed">
-              My name is Aryan Saraswat, I am a Software Engineering Candidate based in Orlando, Florida. My passions include coding and web / application development, I enjoy building user-friendly outputs that bring ideas to life through coding.”
+            <Typography className="text-gray-300 text-lg leading-relaxed mb-6">
+              My name is <span className="text-white font-semibold">Aryan Saraswat</span>. I'm a Software Engineering Candidate based in <span className="text-white font-semibold">Orlando, Florida</span>.
+              <br /><br />
+              I specialize in coding and web/application development. My passion lies in building clean, user-friendly interfaces that bring ideas to life through code.
             </Typography>
             <a
               href="/resume.pdf"
               download
-              className="mt-4 inline-block px-16 py-3 bg-white text-black font-semibold rounded-lg shadow-md hover:bg-gray-200 transition duration-300"
+              className="inline-block px-25 py-3 bg-white text-black font-semibold rounded-lg shadow-md hover:bg-gray-200 transition duration-300"
             >
               Download Resume
             </a>
