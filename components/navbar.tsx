@@ -3,43 +3,30 @@
 import React from 'react';
 import Link from 'next/link';
 import { Navbar, Collapse, IconButton } from '@material-tailwind/react';
-import { MTTypography as Typography } from './MTTypography';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 function NavList() {
   return (
     <ul className="my-2 flex flex-col gap-2 lg:flex-row lg:items-center lg:gap-6">
-      {/* Home */}
       <li>
-        <Typography variant="small" color="blue-gray" className="p-1 font-medium">
-          <Link href="/" className="flex items-center hover:text-gray-500 transition-colors">
-            Home
-          </Link>
-        </Typography>
+        <Link href="/" className="block p-1 font-medium text-blue-gray hover:text-gray-500 transition-colors">
+          Home
+        </Link>
       </li>
-      {/* About */}
       <li>
-        <Typography variant="small" color="blue-gray" className="p-1 font-medium">
-          <Link href="/about" className="flex items-center hover:text-gray-500 transition-colors">
-            About
-          </Link>
-        </Typography>
+        <Link href="/about" className="block p-1 font-medium text-blue-gray hover:text-gray-500 transition-colors">
+          About
+        </Link>
       </li>
-      {/* Projects */}
       <li>
-        <Typography variant="small" color="blue-gray" className="p-1 font-medium">
-          <Link href="/projects" className="flex items-center hover:text-gray-500 transition-colors">
-            Projects
-          </Link>
-        </Typography>
+        <Link href="/projects" className="block p-1 font-medium text-blue-gray hover:text-gray-500 transition-colors">
+          Projects
+        </Link>
       </li>
-      {/* Contact */}
       <li>
-        <Typography variant="small" color="blue-gray" className="p-1 font-medium">
-          <Link href="/contact" className="flex items-center hover:text-gray-500 transition-colors">
-            Contact
-          </Link>
-        </Typography>
+        <Link href="/contact" className="block p-1 font-medium text-blue-gray hover:text-gray-500 transition-colors">
+          Contact
+        </Link>
       </li>
     </ul>
   );
@@ -62,9 +49,7 @@ export function NavbarSimple() {
         {/* Left: Logo + Name */}
         <div className="flex items-center space-x-2">
           <img src="/favicon.ico" alt="Logo" className="h-8 w-8" />
-          <Typography variant="h6" className="text-xl font-bold">
-            Aryan
-          </Typography>
+          <span className="text-xl font-bold text-white">Aryan</span>
         </div>
 
         {/* Right: Nav links (desktop) + hamburger (mobile) */}
