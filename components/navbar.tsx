@@ -44,7 +44,7 @@ export function NavbarSimple() {
   }, []);
 
   return (
-    <Navbar fullWidth {...({} as React.ComponentProps<typeof Navbar>)} className="w-full bg-black text-white px-6 py-6 shadow-md rounded-none">
+    <Navbar fullWidth {...({} as React.ComponentProps<typeof Navbar>)} className="w-full bg-black text-white px-6 py-6 shadow-md rounded-none"> className="w-full bg-black text-white px-6 py-6 shadow-md rounded-none">
       <div className="flex items-center justify-between">
         {/* Left: Logo + Name */}
         <div className="flex items-center space-x-2">
@@ -58,6 +58,12 @@ export function NavbarSimple() {
             <NavList />
           </div>
           <IconButton
+            variant="text"
+            {...({} as React.ComponentProps<typeof IconButton>)}
+            className="ml-2 h-6 w-6 text-white lg:hidden"
+            ripple={false}
+            onClick={() => setOpenNav((o) => !o)}
+          >
             variant="text"
             className="ml-2 h-6 w-6 text-white lg:hidden"
             ripple={false}
