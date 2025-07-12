@@ -21,7 +21,8 @@ export function AboutCard() {
           ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}
         `}
       >
-        <Card className="w-full max-w-4xl rounded-3xl shadow-2xl bg-black text-white overflow-hidden">
+        <Card className="w-full max-w-4xl rounded-3xl shadow-2xl bg-black text-white overflow-hidden"
+          {...({} as React.ComponentProps<typeof Card>)}/>
           <CardBody className="p-8 sm:p-12">
             <Typography variant="h2" className="text-4xl sm:text-5xl font-bold mb-6">
               About Me
