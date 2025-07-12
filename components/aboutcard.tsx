@@ -1,10 +1,10 @@
 'use client';
+import React, { useEffect, useState } from 'react';
 import {
   Card,
   CardBody,
   Typography,
 } from "@material-tailwind/react";
-import { useEffect, useState } from "react";
 
 export function AboutCard() {
   const [isVisible, setIsVisible] = useState(false);
@@ -25,11 +25,21 @@ export function AboutCard() {
           className="w-full max-w-4xl rounded-3xl shadow-2xl bg-black text-white overflow-hidden"
           {...({} as React.ComponentProps<typeof Card>)}
         >
-          <CardBody className="p-8 sm:p-12">
-            <Typography variant="h2" className="text-4xl sm:text-5xl font-bold mb-6">
+          <CardBody
+            className="p-8 sm:p-12"
+            {...({} as React.ComponentProps<typeof CardBody>)}
+          >
+            <Typography
+              variant="h2"
+              className="text-4xl sm:text-5xl font-bold mb-6"
+              {...({} as React.ComponentProps<typeof Typography>)}
+            >
               About Me
             </Typography>
-            <Typography className="text-gray-300 text-base sm:text-lg leading-relaxed">
+            <Typography
+              className="text-gray-300 text-base sm:text-lg leading-relaxed"
+              {...({} as React.ComponentProps<typeof Typography>)}
+            >
               I’m a Computer Science student at the University of Central Florida with over 3 years of hands-on experience in coding, application development, system programming, and automation.
               <br /><br />
               I’m passionate about software engineering, working with data structures and algorithms, and solving complex problems through clean, efficient code. Whether it’s building new applications or optimizing existing systems, I love transforming ideas into scalable and real-world solutions.
