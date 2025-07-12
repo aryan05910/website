@@ -1,38 +1,36 @@
 'use client';
+import React, { useEffect, useState } from 'react';
 import {
   Card,
   CardBody,
   Typography,
-} from "@material-tailwind/react";
-import { useEffect, useState } from "react";
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+} from '@material-tailwind/react';
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
 const contactLinks = [
   {
-    title: "Email",
-    url: "mailto:aryansaraswat5@gmail.com",
+    title: 'Email',
+    url: 'mailto:aryansaraswat5@gmail.com',
     icon: <FaEnvelope className="text-red-400 text-4xl" />,
-    text: "Send me an email",
+    text: 'Send me an email',
   },
   {
-    title: "LinkedIn",
-    url: "https://www.linkedin.com/in/aryan-saraswat-001a5b336/",
+    title: 'LinkedIn',
+    url: 'https://www.linkedin.com/in/aryan-saraswat-001a5b336/',
     icon: <FaLinkedin className="text-blue-500 text-4xl" />,
-    text: "Connect with me on LinkedIn",
+    text: 'Connect with me on LinkedIn',
   },
   {
-    title: "GitHub",
-    url: "https://github.com/aryan05910",
+    title: 'GitHub',
+    url: 'https://github.com/aryan05910',
     icon: <FaGithub className="text-white text-4xl" />,
-    text: "Check out my GitHub projects",
+    text: 'Check out my GitHub projects',
   },
 ];
 
 export function ContactCard() {
   const [isVisible, setIsVisible] = useState(false);
-  useEffect(() => {
-    setIsVisible(true);
-  }, []);
+  useEffect(() => { setIsVisible(true); }, []);
 
   return (
     <div className="flex flex-col items-center min-h-screen pt-16 space-y-8">
@@ -41,13 +39,23 @@ export function ContactCard() {
           key={index}
           className={`
             transition-all duration-700 ease-out transform
-            ${isVisible ? "translate-y-0 opacity-100" : "translate-y-12 opacity-0"}
+            ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}
           `}
         >
-          <Card className="w-full max-w-[600px] rounded-3xl shadow-2xl bg-black text-white overflow-hidden flex items-center gap-6 p-6">
+          <Card
+            className="w-full max-w-[600px] rounded-3xl shadow-2xl bg-black text-white overflow-hidden flex items-center gap-6 p-6"
+            {...({} as React.ComponentProps<typeof Card>)}
+          >
             <div>{link.icon}</div>
-            <CardBody className="p-0">
-              <Typography variant="h5" className="font-bold">
+            <CardBody
+              className="p-0"
+              {...({} as React.ComponentProps<typeof CardBody>)}
+            >
+              <Typography
+                variant="h5"
+                className="font-bold"
+                {...({} as React.ComponentProps<typeof Typography>)}
+              >
                 {link.title}
               </Typography>
               <a
