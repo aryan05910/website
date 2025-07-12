@@ -14,25 +14,53 @@ function NavList() {
   return (
     <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
       {/* Home */}
-      <Typography as="li" variant="small" color="blue-gray" className="p-1 font-medium">
+-      <Typography as="li" variant="small" color="blue-gray" className="p-1 font-medium">
++      <Typography
++        as="li"
++        variant="small"
++        color="blue-gray"
++        className="p-1 font-medium"
++        {...({} as React.ComponentProps<typeof Typography>)}
++      >
         <Link href="/" className="flex items-center hover:text-gray-500 transition-colors">
           Home
         </Link>
       </Typography>
       {/* About */}
-      <Typography as="li" variant="small" color="blue-gray" className="p-1 font-medium">
+-      <Typography as="li" variant="small" color="blue-gray" className="p-1 font-medium">
++      <Typography
++        as="li"
++        variant="small"
++        color="blue-gray"
++        className="p-1 font-medium"
++        {...({} as React.ComponentProps<typeof Typography>)}
++      >
         <Link href="/about" className="flex items-center hover:text-gray-500 transition-colors">
           About
         </Link>
       </Typography>
       {/* Projects */}
-      <Typography as="li" variant="small" color="blue-gray" className="p-1 font-medium">
+-      <Typography as="li" variant="small" color="blue-gray" className="p-1 font-medium">
++      <Typography
++        as="li"
++        variant="small"
++        color="blue-gray"
++        className="p-1 font-medium"
++        {...({} as React.ComponentProps<typeof Typography>)}
++      >
         <Link href="/projects" className="flex items-center hover:text-gray-500 transition-colors">
           Projects
         </Link>
       </Typography>
       {/* Contact */}
-      <Typography as="li" variant="small" color="blue-gray" className="p-1 font-medium">
+-      <Typography as="li" variant="small" color="blue-gray" className="p-1 font-medium">
++      <Typography
++        as="li"
++        variant="small"
++        color="blue-gray"
++        className="p-1 font-medium"
++        {...({} as React.ComponentProps<typeof Typography>)}
++      >
         <Link href="/contact" className="flex items-center hover:text-gray-500 transition-colors">
           Contact
         </Link>
