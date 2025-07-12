@@ -64,11 +64,6 @@ export function NavbarSimple() {
             ripple={false}
             onClick={() => setOpenNav((o) => !o)}
           >
-            variant="text"
-            className="ml-2 h-6 w-6 text-white lg:hidden"
-            ripple={false}
-            onClick={() => setOpenNav((o) => !o)}
-          >
             {openNav ? (
               <XMarkIcon className="h-6 w-6" strokeWidth={2} />
             ) : (
