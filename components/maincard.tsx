@@ -25,7 +25,7 @@ export function HorizontalCard() {
         >
           {/* Left content */}
           <CardBody
-            className="p-6 sm:w-2/3 flex flex-col justify-start"
+            className="p-15 sm:w-2/3 flex flex-col justify-start"
             {...({} as React.ComponentProps<typeof CardBody>)}
           >
             <Typography
@@ -43,13 +43,16 @@ export function HorizontalCard() {
               <br /><br />
               I specialize in coding and web/application development. My passion lies in building clean, user-friendly interfaces that bring ideas to life through code.
             </Typography>
-            <a
-              href="/resume.pdf"
-              download
-              className="inline-block px-6 py-3 bg-white text-black font-semibold rounded-lg shadow-md hover:bg-gray-200 transition duration-300"
-            >
-              Download Resume
-            </a>
+            <div className="flex justify-start">
+              <a
+                href="/resume.pdf"
+                download
+                className="px-4 py-2 bg-white text-black font-semibold rounded-lg shadow-md hover:bg-gray-200 transition duration-300 text-center"
+              >
+                Download Resume
+              </a>
+            </div>
+
           </CardBody>
 
           {/* Right image */}
