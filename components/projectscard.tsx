@@ -34,10 +34,10 @@ export function ProjectsCard() {
               Projects
             </Typography>
             <Typography
-              className="text-lg mb-6"
+              className="text-lg whitespace-nowrap"
               {...({} as React.ComponentProps<typeof Typography>)}
             >
-              Explore my projects that showcase my skills in web development, data science, and more.
+              To be updated soon.
             </Typography>
           </CardBody>
         </Card>
