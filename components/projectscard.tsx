@@ -19,26 +19,56 @@ export function ProjectsCard() {
         `}
       >
         <Card
-          className="w-full max-w-[800px] rounded-3xl shadow-2xl bg-black text-white overflow-hidden flex flex-col sm:flex-row"
+          className="w-full max-w-[900px] rounded-3xl shadow-2xl bg-black text-white overflow-hidden flex flex-col"
           {...({} as React.ComponentProps<typeof Card>)}
         >
-          <CardBody
-            className="p-8 sm:w-2/3 flex flex-col justify-center"
-            {...({} as React.ComponentProps<typeof CardBody>)}
-          >
+          <CardBody className="p-8 flex flex-col justify-center space-y-8">
             <Typography
               variant="h2"
-              className="text-5xl font-bold mb-4"
+              className="text-5xl font-bold mb-6 text-center"
               {...({} as React.ComponentProps<typeof Typography>)}
             >
               Projects
             </Typography>
-            <Typography
-              className="text-lg whitespace-nowrap"
-              {...({} as React.ComponentProps<typeof Typography>)}
-            >
-              To be updated soon.
-            </Typography>
+
+            {/* File Organizer Project */}
+            <div className="bg-gray-900 rounded-2xl p-6 shadow-md">
+              <Typography
+                variant="h4"
+                className="text-2xl font-semibold mb-2"
+                {...({} as React.ComponentProps<typeof Typography>)}
+              >
+                File Organizer
+              </Typography>
+              <Typography
+                className="text-base text-gray-300"
+                {...({} as React.ComponentProps<typeof Typography>)}
+              >
+                A background-running macOS menu bar app built with Python that
+                automatically organizes downloads by file type or custom keywords.
+                Includes a simple interface to manage rules and launches at login.
+              </Typography>
+            </div>
+
+            {/* Sign Language Detector Project */}
+            <div className="bg-gray-900 rounded-2xl p-6 shadow-md">
+              <Typography
+                variant="h4"
+                className="text-2xl font-semibold mb-2"
+                {...({} as React.ComponentProps<typeof Typography>)}
+              >
+                Sign Language Detector
+              </Typography>
+              <Typography
+                className="text-base text-gray-300"
+                {...({} as React.ComponentProps<typeof Typography>)}
+              >
+                A real-time computer vision project using TensorFlow’s Object
+                Detection API to recognize and classify hand gestures for sign
+                language. Demonstrates machine learning, image processing, and
+                live prediction capabilities.
+              </Typography>
+            </div>
           </CardBody>
         </Card>
       </div>
