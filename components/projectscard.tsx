@@ -22,7 +22,10 @@ export function ProjectsCard() {
           className="w-full max-w-[900px] rounded-3xl shadow-2xl bg-black text-white overflow-hidden flex flex-col"
           {...({} as React.ComponentProps<typeof Card>)}
         >
-          <CardBody className="p-8 flex flex-col justify-center space-y-8">
+          <CardBody
+            className="p-8 flex flex-col justify-center space-y-8"
+            {...({} as React.ComponentProps<typeof CardBody>)}
+          >
             <Typography
               variant="h2"
               className="text-5xl font-bold mb-6 text-center"
