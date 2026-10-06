@@ -40,9 +40,9 @@ export function AboutCard() {
               className="text-gray-300 text-base sm:text-lg leading-relaxed"
               {...({} as React.ComponentProps<typeof Typography>)}
             >
-              I’m a Computer Science student at the University of Central Florida with over 3 years of hands-on experience in coding, application development, system programming, and automation.
+              I'm a Master of Science in Digital Forensics student at the University of Central Florida, building on a B.S. in Computer Science and over 4 years of hands-on experience in coding, systems programming, and automation. I'm focused on a career in digital forensic analysis, and I'm currently developing practical skills in evidence acquisition, disk imaging, hashing and integrity verification, and hex-level file system analysis using tools like WinHex, Hex Fiend, FTK Imager, and dd.
               <br /><br />
-              I’m passionate about software engineering, working with data structures and algorithms, and solving complex problems through clean, efficient code. Whether it’s building new applications or optimizing existing systems, I love transforming ideas into scalable and real-world solutions.
+              My software engineering background shapes how I approach investigations. I'm comfortable with data structures, algorithms, and scripting, which helps me automate repetitive analysis and dig into how systems actually store and handle data. I've also led teams from concept to delivery, including my capstone project, where I managed a five-person team improving a university research platform. I'm now looking for an opportunity where I can apply both sides of that background to real casework.
             </Typography>
           </CardBody>
         </Card>

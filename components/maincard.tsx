@@ -39,9 +39,9 @@ export function HorizontalCard() {
               className="text-gray-300 text-lg leading-relaxed mb-6"
               {...({} as React.ComponentProps<typeof Typography>)}
             >
-              My name is <span className="text-white font-semibold">Aryan Saraswat</span>. I'm a Software Engineering Candidate based in <span className="text-white font-semibold">Orlando, Florida</span>.
+              My name is <span className="text-white font-semibold">Aryan Saraswat</span>. I'm a Digital Forensics graduate student and Computer Science graduate based in <span className="text-white font-semibold">Orlando, Florida</span>.
               <br /><br />
-              I specialize in coding and web/application development. My passion lies in building clean, user-friendly interfaces that bring ideas to life through code.
+              I'm pursuing a career in digital forensic analysis, with a focus on evidence acquisiton, disk imaging, and file system investigation. My software engineering background lets me approach investigations with a developer's eye for how systems really work.
             </Typography>
             <div className="flex justify-start">
               <a
